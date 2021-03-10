@@ -1,0 +1,124 @@
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    line-height: 1.3;
+    background-color: hsl(204, 43%, 93%);
+    color: hsl(218, 22%, 67%);
+    padding: 1.8em;
+}
+.cards{
+    border-radius: 0.5em;
+     overflow: hidden;
+     max-width: 40em;
+     margin: auto;
+}
+.cards > * {
+    padding: 1.5em 1.8em 1.5em 1.8em;
+}
+.one{
+    background-color: hsl(0, 0%, 100%);   
+}
+.one h2{
+    color:hsl(178, 52%, 44%);
+    font-weight: bold;
+    font-size: 1.25em ;
+}
+.one .subtitle{
+    color: hsl(70, 72%, 65%);
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom:1em ;
+}
+.one p{
+    font-size: 0.85em;
+    line-height: 2.2;
+    margin-bottom: 0;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3{
+    margin-top: 0;
+    line-height: 1.15;
+}
+h2{
+    font-size: 1.25em;
+    margin-bottom: 1.25em;
+}
+h3 {
+    font-size: 1.1em ;
+}
+p{
+    margin-top: 0;
+}
+.two{
+    background-color: hsl(179, 62%, 40%);
+    color: hsl(204, 43%, 93%);   
+}
+.price{
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8em;
+}
+.dollar{
+    font-size: 2em;
+    font-weight: bold;
+}
+.month{
+    margin-left: 0.4em;
+    font-size: 1em;
+    opacity: 0.75;
+}
+.two p {
+font-size: 0.9em;
+margin-bottom: 2.2em ;
+}
+.two a{
+    display: block;
+   background-color: hsl(71, 73%, 54%);
+   color: hsl(0, 0%, 100%);
+   padding: 0.75em;
+   text-align: center;
+   border-radius: 0.25em;
+   box-shadow: 0 0.5em 1em rgba(0,0,0,0.15);
+}
+.three{
+    background-color: hsl(179, 62%, 45%);
+    color: hsl(0, 0%, 100%);
+}
+ul{
+    margin-top: 0;
+    padding: 0;
+}
+li{
+    list-style: none; 
+    font-size: 0.85em;
+    margin-bottom: 0.2em; 
+}
+footer{
+    margin-top: 4em;
+    text-align: center;
+}
+footer a{
+    background: hsl(179, 62%, 45) ;
+}
+@media only screen and (min-width: 62.5em){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+    .one{
+        grid-column: 1 / 3;
+    }
+    h3{
+        margin-top: 1.2em;
+    }
+}
