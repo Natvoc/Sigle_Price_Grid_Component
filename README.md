@@ -4,6 +4,3 @@ This is a solution to the Single Price Grid challenge on Frontend Mentor](). Fro
 
 
 
-
-- Solution URL: https://natvoc.github.io/Sigle_Price_Grid_Component/
-
